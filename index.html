@@ -12,7 +12,7 @@
   </head>
 <body>
   <header class="header"> 
-    <div class="header__content">
+    <a href="/" class="header__content">
       <div class="header__content__logo">
         <img class="header__content__logo-img" src="/file/img/header/make_birdbird.svg" />
       </div>
@@ -20,7 +20,7 @@
         <div class="header__content__text-surname"><p class="content__text_bold">Иванов</p></div>
         <div class="header__content__text-name"><p>Иван Иванович</p></div>
       </div>
-    </div>
+    </a>
     <div class="header__menu">
       <div class="header__menu__rect">
         <div class="header__menu__top-rect"></div>
@@ -29,11 +29,19 @@
     </div>
   </header>
   <main class="main">
-    <div class="container_menu-vertical">
-      <a href="#start_word"><p class="menu__item p_14">Напутственное слово</p></a>
-      <a href="#sheet"><p class="menu__item p_14">Сетка</p></a>
-      <a href="#typography"><p class="menu__item p_14">Типографика</p></a>
-      <a href="#ui"><p class="menu__item p_14">UI</p></a>
+    <div class="container__menu-vertical">
+      <div class="header__menu">
+        <div class="header__menu__rect">
+          <div class="header__menu__top-rect"></div>
+          <div class="header__menu__bottom-rect"></div>
+        </div>
+      </div>
+      <div class="menu-vertical">
+        <a href="#start_word"><p class="menu__item p_14">На<wbr>путст<wbr>вен<wbr>ное слово</p></a>
+        <a href="#sheet"><p class="menu__item p_14">Сетка</p></a>
+        <a href="#typography"><p class="menu__item p_14">Ти<wbr>по<wbr>гра<wbr>фи<wbr>ка</p></a>
+        <a href="#ui"><p class="menu__item p_14">UI</p></a>
+      </div>
     </div>
     <div class="container__content">
       <section id="start_word">
@@ -43,20 +51,22 @@
       </section>
       <section id="sheet">
         <h2>Сетка</h2>
-          <p class="content__text p_16">Задание предполагает адаптивную вёрстку. Используется 3 состояния в зависимости от устройства. Сетка «резиновая» — переменной ширины.</p>
+          <p class="content__text p_16">Задание предполагает адаптивную вёрстку. Используется 3 состояния в зависимости от устройства. Сетка «резиновая» — переменной ширины.</p>
           <p class="p_lead">Десктоп (1200+)</p>
           <div class="content__colums">
             <div class="content_colums-tr">
-              <div class="content_colums-td"><p class="p_14">Контент</p></div>
-              <div class="content_colums-td"><p class="p_14">Колонок</p></div>
-              <div class="content_colums-td"><p class="p_14">Ширина колонки</p></div>
-              <div class="content_colums-td"><p class="p_14">Межколонник</p></div>
-            </div>
-            <div class="content_colums-tr">
-              <div class="content_colums-td"><p class="p_lead">1072–1312</p></div>
-              <div class="content_colums-td"><p class="p_lead">12</p></div>
-              <div class="content_colums-td"><p class="p_lead">60-80</p></div>
-              <div class="content_colums-td"><p class="p_lead">32</p></div>
+              <div class="content_colums-td">
+                <p class="p_14">Контент</p>
+                <p class="p_lead">1072–1312</p></div>
+              <div class="content_colums-td">
+                <p class="p_14">Колонок</p>
+                <p class="p_lead">12</p></div>
+              <div class="content_colums-td">
+                <p class="p_14">Ширина колонки</p>
+                <p class="p_lead">60-80</p></div>
+              <div class="content_colums-td">
+                <p class="p_14">Межколонник</p>
+                <p class="p_lead">32</p></div>
             </div>
           </div>
           <img src="/file/img/main/note.png" alt="note" title="note">
@@ -64,32 +74,40 @@
           <p class="p_lead">Планшет (736+)</p>
           <div class="content__colums">
             <div class="content_colums-tr">                
-              <div class="content_colums-td"><p class="p_14">Контент</p></div>
-              <div class="content_colums-td"><p class="p_14">Колонок</p></div>
-              <div class="content_colums-td"><p class="p_14">Ширина колонки</p></div>
-              <div class="content_colums-td"><p class="p_14">Межколонник</p></div>
-            </div>
-            <div class="content_colums-tr">
-              <div class="content_colums-td"> <p class="p_lead">672–928</p></div>
-              <div class="content_colums-td"><p class="p_lead">8</p></div>
-              <div class="content_colums-td"><p class="p_lead">56-88</p></div>
-              <div class="content_colums-td"><p class="p_lead">32</p></div>
+              <div class="content_colums-td">
+                <p class="p_14">Контент</p>
+                <p class="p_lead">672–928</p></div>
+              <div class="content_colums-td">
+                <p class="p_14">Колонок</p>
+                <p class="p_lead">8</p></div>
+              <div class="content_colums-td">
+                <p class="p_14">Ширина колонки</p>
+                <p class="p_lead">56-88</p></div>
+              <div class="content_colums-td">
+                <p class="p_14">Межколонник</p>
+                <p class="p_lead">32</p></div>
             </div>
           </div>
           <img src="/file/img/main/pad.png" alt="pad" title="pad">
           <p class="p_lead">Телефон (320+)</p>
           <div class="content__colums">
             <div class="content_colums-tr">                
-              <div class="content_colums-td"><p class="p_14">Контент</p></div>
-              <div class="content_colums-td"><p class="p_14">Колонок</p></div>
-              <div class="content_colums-td"><p class="p_14">Ширина колонки</p></div>
-              <div class="content_colums-td"><p class="p_14">Межколонник</p></div>
-            </div>
-            <div class="content_colums-tr">
-              <div class="content_colums-td"> <p class="p_lead">296–424</p></div>
-              <div class="content_colums-td"><p class="p_lead">4</p></div>
-              <div class="content_colums-td"><p class="p_lead">56-88</p></div>
-              <div class="content_colums-td"><p class="p_lead">24</p></div>
+              <div class="content_colums-td">
+                <p class="p_14">Контент</p>
+                <p class="p_lead">296–424</p>
+              </div>
+              <div class="content_colums-td">
+                <p class="p_14">Колонок</p>
+                <p class="p_lead">4</p>
+              </div>
+              <div class="content_colums-td">
+                <p class="p_14">Ширина колонки</p>
+                <p class="p_lead">56-88</p>
+              </div>
+              <div class="content_colums-td">
+                <p class="p_14">Межколонник</p>
+                <p class="p_lead">24</p>
+              </div>
             </div>
           </div>
           <img src="/file/img/main/phone.png" alt="phone" title="phone">
@@ -248,7 +266,7 @@
                 <input id="email" type="text" placeholder=" " oninput="ValidMail()"/>
                 <label class="p_16">E-mail</label>
               </div>
-              <p class="text-error text-error_hide p_14">Текст ошибки</p>
+              <p class="ui__container__text text-error text-error_hide p_14">Текст ошибки</p>
           </div>
           <div class="ui__content__container">
               <p class="ui__container__text p_14">Ховер</p>
@@ -272,7 +290,7 @@
                 <input type="text" placeholder=" " />
                 <label class="p_16">E-mail</label>
               </div>
-              <p class="text-error p_14">Текст ошибки</p>
+              <p class="ui__container__text text-error p_14">Текст ошибки</p>
           </div>
         </div>
         <h3>Выпадающий список</h3>
@@ -455,18 +473,11 @@
   </footer>
   <div class="modal">
     <div class="modal__content">
-      <div class="modal__header header">
-        <div class="header__content">
-          <div class="header__content__logo">
-            <img class="header__content__logo-img" src="/file/img/header/make_birdbird.svg">
-          </div>
+      <div class="wrapper"> 
+        <div class="wrapper__content">
           <div class="header__content__text">
             <div class="header__content__text-name"><p>Задание выполнил</p></div>
           </div>
-        </div>
-      </div>
-      <div class="wrapper"> 
-        <div class="wrapper__content">
           <h2>Иванов<br>Иван Иванович</h2>
           <p class="p_16">Краткое описание. Например, студент 4 курса специальности «Прикладная информатика» в КузГТУ</p>
           <h3>+7 (800) 555-35-35</h3>

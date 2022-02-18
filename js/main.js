@@ -3,12 +3,20 @@ let body = document.querySelector("body");
 let menuItem = document.querySelectorAll(".menu__item");
 let arAnchorsMenuItem = document.querySelectorAll("a[href*='#']");
 
-let headerMenuRect = document.querySelector(".header__menu__rect");
-let headerMenuTopRect = document.querySelector(".header__menu__top-rect");
-let headerMenuBottomRect = document.querySelector(".header__menu__bottom-rect");
+let headerMenuRect = document.querySelector(".header .header__menu__rect");
+let headerMenuTopRect = document.querySelector(".header .header__menu__top-rect");
+let headerMenuBottomRect = document.querySelector(".header .header__menu__bottom-rect");
 
-let containerMenuVertical = document.querySelector(".container_menu-vertical");
+let containerMenuVertical = document.querySelector(".container__menu-vertical");
+let containerMenuVerticalHeight = containerMenuVertical.offsetHeight;
 let offsetTopContainerMenuVertical = containerMenuVertical.offsetTop;
+let menuVerticalRect = document.querySelector(".container__menu-vertical .header__menu__rect");
+let menuVerticalTopRect = document.querySelector(".container__menu-vertical .header__menu__top-rect");
+let menuVerticalBottomRect = document.querySelector(".container__menu-vertical .header__menu__bottom-rect");
+let menuVertical = document.querySelector(".menu-vertical");
+let menuVerticalHeight = menuVertical.offsetHeight;
+
+let click = false;
 
 let main = document.querySelector("main");
 
@@ -30,16 +38,37 @@ window.addEventListener("resize", ()=>{
 	for( let i = 0; i < typoContentR.length; i++ ){
 		typoContentR[i].style.width = `${width}px`;
 	}
+
+	if( window.innerWidth < 1200 ){
+		menuVerticalRect.style.display = "flex";
+	}else{
+		menuVerticalRect.style.display = "none";
+	}
 });
 
 // движение бокового меню
 $(window).scroll(function(){
 	if( window.scrollY > offsetTopContainerMenuVertical ){
-		containerMenuVertical.style.top = `${window.scrollY - 300}px`;
+		containerMenuVertical.style.top = `${window.scrollY - 280}px`;
 	}
 	else {
-		containerMenuVertical.style.top = `${offsetTopContainerMenuVertical}px`;
+		containerMenuVertical.style.top = `${0}px`;
 	}
+});
+
+// открытие бокового меню
+menuVerticalRect.addEventListener("click", function(){
+	menuVerticalTopRect.classList.toggle("top-rect-open");
+	menuVerticalBottomRect.classList.toggle("bottom-rect-open");
+	
+	if( !click ){
+		containerMenuVertical.style.height = `${ menuVerticalHeight + containerMenuVerticalHeight }px`;
+		click = true;
+	}else{
+		containerMenuVertical.style.height = "";
+		click = false;
+	}
+
 });
 
 // плавный скролл + выделение пунктов меню  
@@ -126,7 +155,3 @@ headerMenuRect.addEventListener("click", ()=>{
 
 	body.classList.toggle("body_overflow-hide");
 });
-
-
-
-

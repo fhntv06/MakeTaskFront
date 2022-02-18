@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>junior-Front-End</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet prefetch" href="/file/font/graphik.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  </head>
+<body>
+  <header class="header"> 
+    <div class="header__content">
+      <div class="header__content__logo">
+        <img class="header__content__logo-img" src="/file/img/header/make_birdbird.svg" />
+      </div>
+      <div class="header__content__text">
+        <div class="header__content__text-surname"><p class="content__text_bold">Иванов</p></div>
+        <div class="header__content__text-name"><p>Иван Иванович</p></div>
+      </div>
+    </div>
+    <div class="header__menu">
+      <div class="header__menu__rect">
+        <div class="header__menu__top-rect"></div>
+        <div class="header__menu__bottom-rect"></div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="container_menu-vertical">
+      <a href="#start_word"><p class="menu__item p_14">Напутственное слово</p></a>
+      <a href="#sheet"><p class="menu__item p_14">Сетка</p></a>
+      <a href="#typography"><p class="menu__item p_14">Типографика</p></a>
+      <a href="#ui"><p class="menu__item p_14">UI</p></a>
+    </div>
+    <div class="container__content">
+      <section id="start_word">
+        <h1>Тестовое задание</h1>
+        <p class="p_lead">Уровень: junior</p>
+        <p class="content__text p_16">Привет! Твоё тестовое задание — грамотно заверстать эту прекрасную страничку. В шапке страницы укажи своё ФИО, так всем будет удобнее. В менюхе под иконкой бургером мы хотели бы также видеть твои данные. Ну что, поехали?</p>
+      </section>
+      <section id="sheet">
+        <h2>Сетка</h2>
+          <p class="content__text p_16">Задание предполагает адаптивную вёрстку. Используется 3 состояния в зависимости от устройства. Сетка «резиновая» — переменной ширины.</p>
+          <p class="p_lead">Десктоп (1200+)</p>
+          <div class="content__colums">
+            <div class="content_colums-tr">
+              <div class="content_colums-td"><p class="p_14">Контент</p></div>
+              <div class="content_colums-td"><p class="p_14">Колонок</p></div>
+              <div class="content_colums-td"><p class="p_14">Ширина колонки</p></div>
+              <div class="content_colums-td"><p class="p_14">Межколонник</p></div>
+            </div>
+            <div class="content_colums-tr">
+              <div class="content_colums-td"><p class="p_lead">1072–1312</p></div>
+              <div class="content_colums-td"><p class="p_lead">12</p></div>
+              <div class="content_colums-td"><p class="p_lead">60-80</p></div>
+              <div class="content_colums-td"><p class="p_lead">32</p></div>
+            </div>
+          </div>
+          <img src="/file/img/main/note.png" alt="note" title="note">
+
+          <p class="p_lead">Планшет (736+)</p>
+          <div class="content__colums">
+            <div class="content_colums-tr">                
+              <div class="content_colums-td"><p class="p_14">Контент</p></div>
+              <div class="content_colums-td"><p class="p_14">Колонок</p></div>
+              <div class="content_colums-td"><p class="p_14">Ширина колонки</p></div>
+              <div class="content_colums-td"><p class="p_14">Межколонник</p></div>
+            </div>
+            <div class="content_colums-tr">
+              <div class="content_colums-td"> <p class="p_lead">672–928</p></div>
+              <div class="content_colums-td"><p class="p_lead">8</p></div>
+              <div class="content_colums-td"><p class="p_lead">56-88</p></div>
+              <div class="content_colums-td"><p class="p_lead">32</p></div>
+            </div>
+          </div>
+          <img src="/file/img/main/pad.png" alt="pad" title="pad">
+          <p class="p_lead">Телефон (320+)</p>
+          <div class="content__colums">
+            <div class="content_colums-tr">                
+              <div class="content_colums-td"><p class="p_14">Контент</p></div>
+              <div class="content_colums-td"><p class="p_14">Колонок</p></div>
+              <div class="content_colums-td"><p class="p_14">Ширина колонки</p></div>
+              <div class="content_colums-td"><p class="p_14">Межколонник</p></div>
+            </div>
+            <div class="content_colums-tr">
+              <div class="content_colums-td"> <p class="p_lead">296–424</p></div>
+              <div class="content_colums-td"><p class="p_lead">4</p></div>
+              <div class="content_colums-td"><p class="p_lead">56-88</p></div>
+              <div class="content_colums-td"><p class="p_lead">24</p></div>
+            </div>
+          </div>
+          <img src="/file/img/main/phone.png" alt="phone" title="phone">
+      </section>
+      <section id="typography">
+        <h2>Типографика</h2>
+        <p class="content__text p_16">Используется шрифт Graphik. На телефонах стили типографики переопределяются</p>
+        <div class="container__typo">
+          <div class="typo__head">
+            <p class="p_16 p_active" data-tab="0">Десктоп</p>
+            <p class="p_16" data-tab="1">Телефон</p>
+          </div>
+          <div class="typo__body">
+            <div class="typo__content" data-typo="0">
+              <div class="typo__content-r">
+                <div class="typo__content-cl">
+                  <p class="p_14">Заголовок H1, 48/56, bold</p>
+                </div>
+                <div class="typo__content-cl">
+                  <h1>Текст заголовка</h1>
+                </div>
+              </div>
+              <div class="typo__content-r">
+                <div class="typo__content-cl">
+                  <p class="p_14">Заголовок H2, 32/40, bold</p>
+                </div>
+                <div class="typo__content-cl">
+                  <h2>Текст заголовка</h2>
+                </div>
+              </div>
+              <div class="typo__content-r">
+                <div class="typo__content-cl">
+                  <p class="p_14">Заголовок H3, 24/32, medium</p>
+                </div>
+                <div class="typo__content-cl">
+                  <h3>Текст заголовка</h3>
+                </div>
+              </div>
+              <div class="typo__content-r">
+                <div class="typo__content-cl">
+                  <p class="p_14">Заголовок H4, 18/28, medium</p>
+                </div>
+                <div class="typo__content-cl">
+                  <h4>Текст заголовка</h4>
+                </div>
+              </div>
+              <div class="typo__content-r">
+                <div class="typo__content-cl">
+                  <p class="p_14">Лид P_Lead, 24/32, regular</p>
+                </div>
+                <div class="typo__content-cl">
+                  <p class="p_lead">Текст лида</p>
+                </div>
+              </div>
+              <div class="typo__content-r">
+                <div class="typo__content-cl">
+                  <p class="p_14">Крупный текст P_18, 18/28, regular</p>
+                </div>
+                <div class="typo__content-cl">
+                  <p class="p_18">Крупный текст</p>
+                </div>
+              </div>
+              <div class="typo__content-r">
+                <div class="typo__content-cl">
+                  <p class="p_14">Основной текст P_16, 16/24, regular</p>
+                </div>
+                <div class="typo__content-cl">
+                  <p class="p_16">Основной текст</p>
+                </div>
+              </div>
+              <div class="typo__content-r">
+                <div class="typo__content-cl">
+                  <p class="p_14">Впомогательный текст P_14, 14/20, regular</p>
+                </div>
+                <div class="typo__content-cl">
+                  <p class="p_14">Вспомогательный текст</p>
+                </div>
+              </div>
+            </div>
+            <div class="typo__content" data-typo="1">
+              <div class="typo__content-r">
+                <div class="typo__content-cl">
+                  <p class="p_14-phone">Заголовок H1, 32/40, bold</p>
+                </div>
+                <div class="typo__content-cl">
+                  <p class="h1-phone">Текст заголовка</p>
+                </div>
+              </div>
+              <div class="typo__content-r">
+                <div class="typo__content-cl">
+                  <p class="p_14-phone">Заголовок H2, 28/36, bold</p>
+                </div>
+                <div class="typo__content-cl">
+                  <p class="h2-phone">Текст заголовка</p>
+                </div>
+              </div>
+              <div class="typo__content-r">
+                <div class="typo__content-cl">
+                  <p class="p_14-phone">Заголовок H3, 20/28, medium</p>
+                </div>
+                <div class="typo__content-cl">
+                  <p class="h3-phone">Текст заголовка</p>
+                </div>
+              </div>
+              <div class="typo__content-r">
+                <div class="typo__content-cl">
+                  <p class="p_14-phone">Заголовок H4, 18/28, medium</p>
+                </div>
+                <div class="typo__content-cl">
+                  <p class="h4-phone">Текст заголовка</p>
+                </div>
+              </div>
+              <div class="typo__content-r">
+                <div class="typo__content-cl">
+                  <p class="p_14-phone">Лид P_Lead, 20/28, regular</p>
+                </div>
+                <div class="typo__content-cl">
+                  <p class="p_lead-phone">Текст лида</p>
+                </div>
+              </div>
+              <div class="typo__content-r">
+                <div class="typo__content-cl">
+                  <p class="p_14-phone">Крупный текст P_18, 18/28, regular</p>
+                </div>
+                <div class="typo__content-cl">
+                  <p class="p_18-phone">Крупный текст</p>
+                </div>
+              </div>
+              <div class="typo__content-r">
+                <div class="typo__content-cl">
+                  <p class="p_14-phone">Основной текст P_16, 16/24, regular</p>
+                </div>
+                <div class="typo__content-cl">
+                  <p class="p_16-phone">Основной текст</p>
+                </div>
+              </div>
+              <div class="typo__content-r">
+                <div class="typo__content-cl">
+                  <p class="p_14-phone">Впомогательный текст P_14, 14/20, regular</p>
+                </div>
+                <div class="typo__content-cl">
+                  <p class="p_14-phone">Вспомогательный текст</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="ui">
+        <h2>UI</h2>
+        <h3>Текстовое поле</h3>
+        <div class="ui__content">
+          <div class="ui__content__container">
+              <p class="ui__container__text p_14">&nbsp;</p>
+              <div class="ui__container-email">
+                <input id="email" type="text" placeholder=" " oninput="ValidMail()"/>
+                <label class="p_16">E-mail</label>
+              </div>
+              <p class="text-error text-error_hide p_14">Текст ошибки</p>
+          </div>
+          <div class="ui__content__container">
+              <p class="ui__container__text p_14">Ховер</p>
+              <div class="ui__container-email">
+                <input type="text" placeholder=" " />
+                <label class="p_16">E-mail</label>
+              </div>
+              <p class="ui__container__text text-error p_14">&nbsp;</p>
+          </div>
+          <div class="ui__content__container">
+              <p class="ui__container__text p_14">Ввод</p>
+              <div class="ui__container-email">
+                <input type="text" placeholder=" " />
+                <label class="p_16">E-mail</label>
+              </div>
+              <p class="ui__container__text text-error p_14">&nbsp;</p>
+          </div>
+          <div class="ui__content__container">
+              <p class="ui__container__text p_14">Ошибка</p>
+              <div class="ui__container-email">
+                <input type="text" placeholder=" " />
+                <label class="p_16">E-mail</label>
+              </div>
+              <p class="text-error p_14">Текст ошибки</p>
+          </div>
+        </div>
+        <h3>Выпадающий список</h3>
+        <p class="content__text p_16">Компонент состоит из текстового поля и выпадающей подсказки</p>
+        <div class="ui__content">
+          <div class="ui__content__container">
+            <p class="p_12">Выберите что-нибудь</p>      
+            <ul class="content__select" data-selected_value="Выберите что-нибудь">
+              <li class="content__select__option">
+                <span>Выберите что-нибудь</span>
+                <ul class="options ">
+                  <li data-value="Первый стул"><p>Первый стул</p></li>
+                  <li data-value="Второй стул"><p>Второй стул</p></li>
+                  <li data-value="Выбранный пункт"><p>Выбранный пункт</p></li>
+                  <li data-value="Теорема Эскобара"><p>Теорема Эскобара</p></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="ui__content__container">
+            <p class="p_12">&nbsp;</p> 
+            <ul class="content__select" data-selected_value="Выберите что-нибудь">
+              <li class="content__select__option">
+                <span>Выберите что-нибудь</span>
+                <ul class="options">
+                  <li data-value="Первый стул"><p>Первый стул</p></li>
+                  <li data-value="Второй стул"><p>Второй стул</p></li>
+                  <li data-value="Выбранный пункт"><p>Выбранный пункт</p></li>
+                  <li data-value="Теорема Эскобара"><p>Теорема Эскобара</p></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="ui__content__container">
+            <p class="p_12">Выберите что-нибудь</p>
+            <ul class="content__select open" data-selected_value="Выберите что-нибудь">
+              <li class="content__select__option">
+                <span>Выберите что-нибудь</span>
+                <ul class="options open">
+                  <li data-value="Первый стул"><p>Первый стул</p></li>
+                  <li data-value="Второй стул"><p>Второй стул</p></li>
+                  <li data-value="Выбранный пункт"><p>Выбранный пункт</p></li>
+                  <li data-value="Теорема Эскобара"><p>Теорема Эскобара</p></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <h3 class="ui__title_margin">Кнопка</h3>
+        <div class="ui__content container-btn">
+          <div class="ui__content__container">
+            <p class="ui__container__text p_14">&nbsp;</p>      
+            <button class="ui__content__button">
+              <p>Отправить</p>
+            </button>
+          </div>
+          <div class="ui__content__container">
+            <p class="ui__container__text p_14">Ховер</p>      
+            <button class="ui__content__button">
+              <p>Отправить</p>
+            </button>
+          </div>
+          <div class="ui__content__container">
+            <p class="ui__container__text p_14">Нажатие</p>      
+            <button class="ui__content__button">
+              <p>Отправить</p>
+            </button>
+          </div>
+          <div class="ui__content__container">
+            <p class="ui__container__text p_14">Неактивна</p>      
+            <button class="ui__content__button" disabled="disabled">
+              <p>Отправить</p>
+            </button>
+          </div>
+        </div>
+        <h3>Чекбокс, радиобаттон</h3>
+        <div class="ui__content container-check">
+          <div class="ui__container_flex">
+            <div class="container_flex-check">
+              <label>
+                <input class="custom-checkbox" type="checkbox" name="">
+              </label>
+              <p>Выбери меня</p>
+            </div>
+            <div class="container_flex-check">
+              <label>
+                <input class="custom-checkbox" type="checkbox" name="" id="">
+              </label>
+              <p>Выбери меня</p>
+            </div>
+            <div class="container_flex-check">
+              <label>
+                <input class="custom-checkbox checkbox-check" type="checkbox" name="" id="">
+              </label>
+              <p>Птица счастья завтрашнего дня</p>
+            </div>
+          </div>
+          <div class="ui__container_flex">
+            <div class="container_flex-check">
+              <label>
+                <input class="custom-radio" type="radio" name="">
+              </label>
+              <p>Пластмассовый мир победил</p>
+            </div>
+            <div class="container_flex-check">
+              <label>
+              <input class="custom-radio" type="radio" name="" id="">
+            </label>
+              <p>Макет оказался сильней</p>
+            </div>
+            <div class="container_flex-check">
+              <label>
+              <input class="custom-radio radio-check" type="radio" name="" id="">
+            </label>
+              <p>Последний кораблик остыл</p>
+            </div>
+          </div>
+        </div>
+        <h3>Аккордеон</h3>
+        <div class="ui__content container-accord">
+          <div class="accord-tab">
+            <input id="tab-one" type="checkbox" name="tabs">
+            <label for="tab-one">
+              <p class="p_16">Аккордеон</p>
+            </label>
+            <div class="tab-content">
+              <p class="p_16">Гоpдость полными вагонами золотыми погонами<br>
+                С юга дyют молодые вет…<br>
+                Pазpывая в клочья облака не забыли шлют из далека<br>
+                С дома мама И не последняя любовь<br>
+                А по небy бегyт видишь чьи-то следы<br>
+                Это может быть ты это может быть я<br>
+                Это может наш дрyг<br>
+                Это может нам поют свои</p>
+            </div>
+          </div>
+          <div class="accord-tab">
+            <input id="tab-one" type="checkbox" name="tabs">
+            <label for="tab-one">
+              <p class="p_16">Аккордеон</p>
+            </label>
+            <div class="tab-content">
+              <p class="p_16">Гоpдость полными вагонами золотыми погонами<br>
+                С юга дyют молодые вет…<br>
+                Pазpывая в клочья облака не забыли шлют из далека<br>
+                С дома мама И не последняя любовь<br>
+                А по небy бегyт видишь чьи-то следы<br>
+                Это может быть ты это может быть я<br>
+                Это может наш дрyг<br>
+                Это может нам поют свои
+              </p>
+            </div>
+          </div>
+          <div class="accord-tab">
+            <input id="tab-one" type="checkbox" name="tabs" checked="checked">
+            <label for="tab-one">
+              <p class="p_16">Аккордеон</p>
+            </label>
+            <div class="tab-content">
+              <p class="p_16">Гоpдость полными вагонами золотыми погонами<br>
+                С юга дyют молодые вет…<br>
+                Pазpывая в клочья облака не забыли шлют из далека<br>
+                С дома мама И не последняя любовь<br>
+                А по небy бегyт видишь чьи-то следы<br>
+                Это может быть ты это может быть я<br>
+                Это может наш дрyг<br>
+                Это может нам поют свои</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer__content">
+      <div class="footer__content__text">
+        <p class="p_14">Победа! 😜</p>
+      </div>
+    </div>
+  </footer>
+  <div class="modal">
+    <div class="modal__content">
+      <div class="modal__header header">
+        <div class="header__content">
+          <div class="header__content__logo">
+            <img class="header__content__logo-img" src="/file/img/header/make_birdbird.svg">
+          </div>
+          <div class="header__content__text">
+            <div class="header__content__text-name"><p>Задание выполнил</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper"> 
+        <div class="wrapper__content">
+          <h2>Иванов<br>Иван Иванович</h2>
+          <p class="p_16">Краткое описание. Например, студент 4 курса специальности «Прикладная информатика» в КузГТУ</p>
+          <h3>+7 (800) 555-35-35</h3>
+        </div>
+        <footer class="footer wrapper__footer">
+          <div class="footer__content">
+            <a href="https://vk.com/" class="footer__content-link-mess">
+              <img src="/file/img/modal/footer/shape.svg" title="Go to VK">
+            </a>
+            <a href="https://vk.com/" class="footer__content-link-text">
+              <p>Ссылка на соцсеть/мессенджер</p>
+            </a>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </div>
+  <script src="/js/main.js"></script>
+</body>
+</html>

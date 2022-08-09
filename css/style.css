@@ -1,6 +1,6 @@
 @font-face {
 	font-family: 'Graphik bold'; 
-	src: url(./file/font/Graphik-Bold-Web.ttf); 
+	src: url(../file/font/Graphik-Bold-Web.ttf); 
 }
 @font-face {
 	font-family: 'Graphik italic'; 
@@ -8,11 +8,11 @@
 }
 @font-face {
 	font-family: 'Graphik regular'; 
-	src: url(./file/font/Graphik-Regular-Web.ttf); 
+	src: url(../file/font/Graphik-Regular-Web.ttf); 
 }
 @font-face {
 	font-family: 'Graphik medium'; 
-	src: url(./file/font/Graphik-Medium-Web.ttf); 
+	src: url(../file/font/Graphik-Medium-Web.ttf); 
 }
 
 *{
@@ -602,7 +602,7 @@ main{
 
 .content__select:before {
 	content: '';
-	background-image: url(./file/img/main/row-select.svg);
+	background-image: url(../file/img/main/row-select.svg);
 	width: 9px;
 	height: 6px;
 	position: absolute;
@@ -724,23 +724,23 @@ main{
 .custom-checkbox:not(:disabled):checked::before{
   border-color: #3E29E3;
   background-color: #3E29E3;
-  background-image: url("./file/img/main/check-chekbox.svg");
+  background-image: url("../file/img/main/check-chekbox.svg");
 }
 
 .custom-radio:not(:disabled):checked::before{
   border-color: #3E29E3;
-  background-image: url("./file/img/main/check-radio.svg");
+  background-image: url("../file/img/main/check-radio.svg");
 }
 
 .checkbox-check::before{
   border-color: #3E29E3;
   background-color: #3E29E3;
-  background-image: url("./file/img/main/check-chekbox.svg");
+  background-image: url("../file/img/main/check-chekbox.svg");
 }
 
 .radio-check::before{
   border-color: #3E29E3;
-  background-image: url("./file/img/main/check-radio.svg");
+  background-image: url("../file/img/main/check-radio.svg");
 }
 
 .container-accord {
@@ -833,7 +833,7 @@ main{
 }
 .accord-tab input[type=checkbox] + label::after {
   content: "";
-  background-image: url(/file/img/main/accord.svg);
+  background-image: url(../file/img/main/accord.svg);
   width: 9px;
   height: 6px;
 }
@@ -863,7 +863,7 @@ main{
 	height: 100%;
 	width: 100%;
 	padding: 8px 0 8px 8px;
-	background-image: url(./file/img/header/menu/bg.png);
+	background-image: url(../file/img/header/menu/bg.png);
 	background-size: cover;
 	background-position: center center;
 	background-attachment: fixed;
